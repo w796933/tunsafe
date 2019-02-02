@@ -53,7 +53,7 @@ tunsafe_install(){
     obfsstr=$(cat /dev/urandom | head -1 | md5sum | head -c 4)
     green "输入 1 开启默认UDP+混淆模式（推荐使用）"
     green "输入 2 开启默认TCP+混淆模式"
-    green "输入 3 开启默认TCP+混淆+htpps伪装模式"
+    green "输入 3 开启默认TCP+混淆+HTTPS伪装模式"
     read choose
 if [ $choose == 1 ]
 then
